@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Thérèse Cisse</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f8f6f3;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #1f1f1f;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .nav-link:hover {
+      color: #cfa877 !important;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 90px 20px;
+      background: linear-gradient(135deg, #cfa877, #d8b48a);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* Projets */
+    #projets {
+      padding: 60px 0;
+    }
+
+    #projets .description {
+      max-width: 700px;
+      margin: 0 auto 40px;
+      text-align: center;
+      color: #555;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      height: 180px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    /* Compétences */
+    #competences {
+      background-color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    #competences .icon {
+      font-size: 3rem;
+      margin: 15px;
+      color: #cfa877;
+      transition: transform 0.3s;
+    }
+
+    #competences .icon:hover {
+      transform: scale(1.2);
+    }
+
+ #reseaux-sociaux {
+  background-color: #fff;
+      padding: 60px 0;
+      text-align: center;
+}
+
+#reseaux-sociaux h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+#reseaux-sociaux h4 {
+  font-size: 1.3rem;
+  color: #555;
+}
+
+#reseaux-sociaux a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+#reseaux-sociaux a:hover {
+  transform: scale(1.05);
+  color: #000;
+}
+
+#reseaux-sociaux .icon {
+  color: #555;
+}
+
+#reseaux-sociaux p {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+
+
+    /* Footer */
+    footer {
+      background-color: #1f1f1f;
+      color: white;
+      padding: 20px 0;
+    }
+
+    footer .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    footer .social-icons a:hover {
+      color: #cfa877;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Thérèse CISSE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reseaux-sociaux">Reseaux-Sociaux</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="accueil" class="hero">
+  <h1>Bienvenue sur mon Portfolio</h1>
+  <p>Passionnée d'informatique, de communication, de design, graphiste, développeuse web, social media manager et community manager.</p>
+</section>
+
+<!-- À PROPOS -->
+<section id="apropos" class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-md-4 text-center mb-4">
+      <img src="me.jpg" alt="Photo de Thérèse" class="img-fluid rounded-circle border border-4 border-warning" style="max-width: 250px;">
+    </div>
+    <div class="col-md-8">
+      <h2>À propos de moi</h2>
+      <p>
+        Je m'appelle <strong>Thérèse Cisse</strong>. Diplômée d’une Licence en Informatique Appliquée à la Gestion des Entreprises à l’ISM, et actuellement en Licence 2 en Multimédia, Internet et Communication à l’UVS, je développe des compétences solides à la croisée de la communication, du design et du développement web.
+
+J’ai effectué plusieurs stages et projets pratiques, notamment en tant que chargée de communication du Projet Tutorat de Nguekokh, où j’ai participé à la création de contenus visuels, à la gestion des réseaux sociaux et à la mise en place de stratégies de communication digitale.
+
+À travers mes différentes réalisations — affiches, logos, vidéos, présentations, CV et supports de communication — je combine créativité et rigueur pour donner vie à des projets professionnels et impactants.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJETS -->
+<section id="projets" class="container">
+  <h2 class="text-center mb-3">Mes Projets</h2>
+  <p class="description">Cliquez sur chaque section pour accéder directement à mon dossier Drive et découvrir mes créations dans chaque catégorie.</p>
+
+  <div class="row g-4">
+    <!-- Affiches -->
+    <div class="col-md-4 col-sm-6">
+      <div class="card text-center">
+        <img src="IMG/affiche9.png" alt="Affiches">
+        <div class="card-body">
+          <h5>Affiches</h5>
+          <a href="https://drive.google.com/drive/folders/1H5gclQ5UfmVmRIDn-xSkJ13kN-5tJCui?usp=sharing" target="_blank" class="btn btn-outline-dark btn-sm">Voir</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logos -->
+    <div class="col-md-4 col-sm-6">
+      <div class="card text-center">
+        <img src="IMG/1-removebg-preview.png" alt="Logos">
+        <div class="card-body">
+          <h5>Logos</h5>
+          <a href="https://drive.google.com/drive/folders/1LffOOoN8oFPJxKK1P5MHhb6t1-KFsKUO?usp=sharing" target="_blank" class="btn btn-outline-dark btn-sm">Voir</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CV -->
+    <div class="col-md-4 col-sm-6">
+      <div class="card text-center">
+        <img src="IMG/CV.jpeg" alt="CV">
+        <div class="card-body">
+          <h5>CV</h5>
+          <a href="https://drive.google.com/drive/folders/1kdEs8yb8-AYjd_pO0cPrgu80-BWFTvgj?usp=sharing" target="_blank" class="btn btn-outline-dark btn-sm">Voir</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Montage vidéo -->
+    <div class="col-md-4 col-sm-6">
+      <div class="card text-center">
+        <img src="IMG/MontageVideo.jpeg" alt="Montage vidéo">
+        <div class="card-body">
+          <h5>Montage Vidéo</h5>
+          <a href="https://drive.google.com/drive/folders/13e0hwg_Mknp_ZqlMkGI_FnsHC6IIxItg?usp=sharing" target="_blank" class="btn btn-outline-dark btn-sm">Voir</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Badges -->
+    <div class="col-md-4 col-sm-6">
+      <div class="card text-center">
+        <img src="IMG/1.png" alt="Badges">
+        <div class="card-body">
+          <h5>Badges</h5>
+          <a href="https://drive.google.com/drive/folders/1Y1l4ct267RzDulfhSL-guXH2s6n9FF-g?usp=sharing" target="_blank" class="btn btn-outline-dark btn-sm">Voir</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dépliants -->
+    <div class="col-md-4 col-sm-6">
+      <div class="card text-center">
+        <img src="IMG/2.png" alt="Dépliants">
+        <div class="card-body">
+          <h5>Dépliants</h5>
+          <a href="https://drive.google.com/drive/folders/1OK5hPJsLujepgJoibXkW5prhS9L1zi25?usp=sharing" target="_blank" class="btn btn-outline-dark btn-sm">Voir</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Présentations -->
+    <div class="col-md-4 col-sm-6">
+      <div class="card text-center">
+        <img src="IMG/Man Pointing at Board Modèles des présentations….jpeg" alt="Présentations">
+        <div class="card-body">
+          <h5>Présentations</h5>
+          <a href="https://drive.google.com/drive/folders/1nTIuMjJQZ6Ubdpr1cxt-_m7sAr3nGh8y?usp=sharing" target="_blank" class="btn btn-outline-dark btn-sm">Voir</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPÉTENCES ET OUTILS -->
+<section id="competences">
+  <h2>Mes Compétences et Outils</h2>
+  <div class="container mt-4">
+    <div class="row text-center">
+
+      <!-- Outils bureautiques -->
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fas fa-file-word icon" style="font-size: 2em;"></i>
+        <p>Microsoft Word</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fas fa-file-excel icon" style="font-size: 2em;"></i>
+        <p>Microsoft Excel</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fas fa-file-powerpoint icon" style="font-size: 2em;"></i>
+        <p>PowerPoint</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fas fa-envelope icon" style="font-size: 2em;"></i>
+        <p>Outlook / Gmail</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fas fa-laptop icon" style="font-size: 2em;"></i>
+        <p>Logiciels bureautiques</p>
+      </div>
+
+      <!-- Outils de création graphique -->
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fas fa-paint-brush icon" style="font-size: 2em;"></i>
+        <p>Canva</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fas fa-pen-nib icon" style="font-size: 2em;"></i>
+        <p>Illustrator / Photoshop</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fab fa-adobe icon" style="font-size: 2em;"></i>
+        <p>Adobe Suite</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fas fa-image icon" style="font-size: 2em;"></i>
+        <p>Photoshop</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fas fa-file-alt icon" style="font-size: 2em;"></i>
+        <p>InDesign</p>
+      </div>
+
+      <!-- Web et CMS -->
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fab fa-wordpress icon" style="font-size: 2em;"></i>
+        <p>WordPress</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fab fa-html5 icon" style="font-size: 2em;"></i>
+        <p>HTML5</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fab fa-css3-alt icon" style="font-size: 2em;"></i>
+        <p>CSS3</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fab fa-js icon" style="font-size: 2em;"></i>
+        <p>JavaScript</p>
+      </div>
+
+      <!-- Communication et réseaux sociaux -->
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fas fa-video icon" style="font-size: 2em;"></i>
+        <p>CapCut / Premiere Rush</p>
+      </div>
+
+      <!-- Analyse et gestion de projet -->
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fas fa-chart-line icon" style="font-size: 2em;"></i>
+        <p>Google Analytics</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fas fa-database icon" style="font-size: 2em;"></i>
+        <p>SQL</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fab fa-git-alt icon" style="font-size: 2em;"></i>
+        <p>Git & GitHub</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- RÉSEAUX SOCIAUX GÉRÉS -->
+<section id="reseaux-sociaux">
+  <h2>Réseaux Sociaux que je Gère</h2>
+  <div class="container mt-4">
+    <div class="row text-center justify-content-center">
+
+      <!-- Comptes TikTok -->
+      <div class="col-12 mb-3">
+        <h4>TikTok</h4>
+      </div>
+      <div class="col-6 col-md-4 mb-4">
+        <a href="https://www.tiktok.com/@theresecisse136?_r=1&_t=ZM-92FFAc2EiIF" target="_blank">
+          <i class="fab fa-tiktok icon" style="font-size: 2em;"></i>
+          <p>Compte TikTok 1</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 mb-4">
+        <a href="https://www.tiktok.com/@thesouhair?_r=1&_t=ZM-92FFemLCtul" target="_blank">
+          <i class="fab fa-tiktok icon" style="font-size: 2em;"></i>
+          <p>Compte TikTok 2</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 mb-4">
+        <a href="https://www.tiktok.com/@senagroliv?_r=1&_t=ZM-92FFPlrFRzX" target="_blank">
+          <i class="fab fa-tiktok icon" style="font-size: 2em;"></i>
+          <p>Compte TikTok 3</p>
+        </a>
+      </div>
+
+      <!-- Comptes Instagram -->
+      <div class="col-12 mt-5 mb-3">
+        <h4>Instagram</h4>
+      </div>
+      <div class="col-6 col-md-4 mb-4">
+        <a href="https://www.instagram.com/theresee_de_jesus?igsh=bng0eGE2aDJnbzZv" target="_blank">
+          <i class="fab fa-instagram icon" style="font-size: 2em;"></i>
+          <p>Compte Instagram 1</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 mb-4">
+        <a href="https://www.instagram.com/thesouhair99/profilecard/?igsh=MWNtOXZseXIwZW91cg==" target="_blank">
+          <i class="fab fa-instagram icon" style="font-size: 2em;"></i>
+          <p>Compte Instagram 2</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 mb-4">
+        <a href="https://www.instagram.com/senagroliv?igsh=NjZidjI5dTBjYXJn" target="_blank">
+          <i class="fab fa-instagram icon" style="font-size: 2em;"></i>
+          <p>Compte Instagram 3</p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- CONTACT -->
+<section id="contact" class="container py-5">
+  <h2 class="text-center mb-4">Contactez-moi</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-6 text-center">
+
+      <!-- Email -->
+      <div class="mb-3">
+        <i class="fas fa-envelope" style="font-size: 1.5em;"></i>
+        <p>
+          <a href="mailto:cissetherese67@gmail.com">cissetherese67@gmail.com</a>
+        </p>
+      </div>
+
+      <!-- Téléphone -->
+      <div class="mb-3">
+        <i class="fas fa-phone" style="font-size: 1.5em;"></i>
+        <p>
+          <a href="tel:+221781168911">+221 78 116 89 11</a>
+        </p>
+      </div>
+
+      <!-- WhatsApp -->
+      <div class="mb-3">
+        <i class="fab fa-whatsapp" style="font-size: 1.5em; color: green;"></i>
+        <p>
+          <a href="https://wa.me/221781168911" target="_blank">Discuter sur WhatsApp</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2025 Thérèse Cisse Portfolio</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
